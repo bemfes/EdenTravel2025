@@ -480,12 +480,21 @@ ul {
 
 @media (min-width: 650px) {
   .first-sec {
-    background: url("../images/plan-bg.png") center/cover no-repeat;
+    background: center/cover no-repeat;
+    background-image: url("../images/plan-bg.png");
+    background-image: image-set(
+      url(../images/plan-bg.webp) type("image/webp"),
+      url(../images/plan-bg.png));
+    
   }
 }
 @media (min-width: 500px) and (max-width: 650px) {
   .first-sec {
-    background: url("../images/plan-bg.png") 0 0/100% 55% no-repeat;
+    background: 0 0/100% 55% no-repeat;
+    background-image: url("../images/plan-bg.png");
+    background-image: image-set(
+      url(../images/plan-bg.webp) type("image/webp"),
+      url(../images/plan-bg.png));
   }
 }
 .first-sec__title {
