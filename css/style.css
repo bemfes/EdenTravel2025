@@ -561,7 +561,11 @@ ul {
 }
 @media (max-width: 500px) {
   .first-sec__plan-img {
-    background: url("../images/plan-bg-mobile.png") center/cover no-repeat;
+    background: center/cover no-repeat;
+    background-image: url("../images/plan-bg-mobile.png");
+    background-image: image-set(
+      url(../images/plan-bg-mobile.webp) type("image/webp"),
+      url(../images/plan-bg-mobile.png));
   }
 }
 .first-sec__bottom {
