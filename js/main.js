@@ -93,17 +93,23 @@ const hmg = document.querySelector(".hmg");
 const menuClose = document.querySelector(".nav__close");
 const overlay = document.querySelector(".overlay");
 
+
 hmg.addEventListener("click", () => {
   menu.classList.add("nav__opened");
   overlay.classList.remove("overlay__closed");
+  if (window.innerWidth <= 390) {
+    body.classList.add('no-scroll')
+  }
 });
 menuClose.addEventListener("click", () => {
   menu.classList.remove("nav__opened");
   overlay.classList.add("overlay__closed");
+  body.classList.remove('no-scroll')
 });
 overlay.addEventListener("click", () => {
   menu.classList.remove("nav__opened");
   overlay.classList.add("overlay__closed");
+  body.classList.remove('no-scroll')
 });
 
 const navBox = document.querySelector(".nav__list");
@@ -116,6 +122,7 @@ function menuLinks(navBox, classNavLink) {
       document.querySelector(id).scrollIntoView({ behavior: "smooth" });
       menu.classList.remove("nav__opened");
       overlay.classList.add("overlay__closed");
+      body.classList.remove('no-scroll')
     }
   });
 }
