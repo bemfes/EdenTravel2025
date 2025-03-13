@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="css/preloader.css" />
     <link rel="stylesheet" media="print" onload="this.media='all'; this.onload = null" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" media="print" onload="this.media='all'; this.onload = null" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+   
+
     <script defer src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script defer src="js/swiper-bundle.min.js"></script>
     <script defer src="js/main.js"></script>
@@ -57,12 +60,16 @@
     </div>
     <div class="overlay overlay__closed"></div>
     <section class="first-sec" id="home">
+        <!-- <picture>
+            <source class="first-sec__mobile-img" srcset="images/plan-bg-mobile.webp" type="image/webp">
+            <img class="first-sec__mobile-img" src="images/plan-bg-mobile.png" alt="">
+        </picture> -->
         <div class="first-sec__plan-img">
             <header class="header">
                 <div class="line-container">
                     <div class="header__main container">
                         <a href="index.html" class="header__logo-link">
-                            <img src="icons/logo (5).svg" alt="logo EdenTravel" class="header__logo">
+                            <img fetchpriority="high" src="icons/logo (5).svg" alt="logo EdenTravel" class="header__logo">
                         </a>
                         <nav class="nav">
                             <ul class="nav__list">
