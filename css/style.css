@@ -573,7 +573,7 @@ ul {
   }
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .first-sec__plan-img {
     background: center/cover no-repeat;
     background-image: url("../images/plan-bg-mobile.png");
@@ -581,8 +581,8 @@ ul {
       url(../images/plan-bg-mobile.webp) type("image/webp"),
       url(../images/plan-bg-mobile.png));
   }
-}
-/* 
+} */
+
 @media(min-width: 500px) {
   .first-sec__mobile-img {
     display: none;
@@ -591,8 +591,11 @@ ul {
 @media(max-width: 500px) {
   .first-sec__mobile-img {
     position: absolute;
+    width: 100%;
+    height: 42%;
+    z-index: -1;
   }
-} */
+} 
 
 .first-sec__bottom {
   background: rgba(0, 0, 0, 0.7);
