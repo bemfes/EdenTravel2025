@@ -1,3 +1,12 @@
+body::after {
+  content: url('../images/plan-bg-mobile.png') url('../images/plan-bg-mobile.webp');
+  position: absolute; 
+  width: 0; 
+  height: 0; 
+  overflow: hidden; 
+  z-index: -1;
+}
+
 @font-face {
   font-family: "DMSans-Medium";
   src: url("../fonts/DMSans-Medium.ttf");
@@ -478,6 +487,10 @@ ul {
   margin-bottom: 5px;
 }
 
+.first-sec {
+  position: relative;
+}
+
 @media (min-width: 650px) {
   .first-sec {
     background: center/cover no-repeat;
@@ -559,6 +572,7 @@ ul {
     margin-bottom: 0px;
   }
 }
+
 @media (max-width: 500px) {
   .first-sec__plan-img {
     background: center/cover no-repeat;
@@ -568,6 +582,18 @@ ul {
       url(../images/plan-bg-mobile.png));
   }
 }
+/* 
+@media(min-width: 500px) {
+  .first-sec__mobile-img {
+    display: none;
+  }
+}
+@media(max-width: 500px) {
+  .first-sec__mobile-img {
+    position: absolute;
+  }
+} */
+
 .first-sec__bottom {
   background: rgba(0, 0, 0, 0.7);
   padding: 26px 0px 64px 0px;
